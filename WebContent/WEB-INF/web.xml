@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Login and Registration using JSP</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>InsertData</display-name>
+    <servlet-name>InsertData</servlet-name>
+    <servlet-class>com.akash.InsertData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertData</servlet-name>
+    <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Loginvalidatation</display-name>
+    <servlet-name>Loginvalidatation</servlet-name>
+    <servlet-class>com.akash.Loginvalidatation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Loginvalidatation</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+</web-app>
